@@ -70,7 +70,3 @@ cmake -S . -B build
 cmake --build build -j
 ctest --test-dir build
 ```
-
-## Status
-
-Early. See `TODO.md` for the open work and for design decisions that were intentionally **not** taken (pipe adapter, ADL hook, range/container strategy).
