@@ -1,6 +1,6 @@
 function(cpp_into_add_test NAME)
     add_executable(${NAME} ${NAME}.cpp)
-    target_link_libraries(${NAME} cpp_into::cpp_into GTest::gtest_main)
+    target_link_libraries(${NAME} PRIVATE cpp_into::cpp_into GTest::gtest_main)
     target_compile_options(${NAME} PRIVATE -Wall -Wextra -pedantic)
     add_test(NAME ${NAME} COMMAND ${NAME})
 endfunction()
